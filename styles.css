@@ -59,7 +59,7 @@ body {
   /* Hero Section */
 .hero {
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) url(th.jpg);
+  background: url(th.jpg);
   background-size: cover;
   background-position: center;
   color: white;
