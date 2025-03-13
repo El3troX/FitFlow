@@ -48,7 +48,7 @@
       <p>Explore our comprehensive guide to gym exercises, categorized by muscle groups. Each exercise includes a video tutorial and step-by-step instructions.</p>
 
       <!-- Chest Exercises -->
-      <div class="exercise-category">
+      <div class="exercise-category" id="bench-press">
         <h2>Chest Exercises</h2>
         <div class="exercise-card">
           <h3>Bench Press</h3>
@@ -63,7 +63,7 @@
           </ol>
         </div>
 
-        <div class="exercise-card">
+        <div class="exercise-card" id="incline-dumbbell-press">
           <h3>Incline Dumbbell Press</h3>
           <div class="video-container">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/8iPEnn-ltC8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -78,7 +78,7 @@
       </div>
 
       <!-- Back Exercises -->
-      <div class="exercise-category">
+      <div class="exercise-category" id="deadlift">
         <h2>Back Exercises</h2>
         <div class="exercise-card">
           <h3>Deadlift</h3>
@@ -93,7 +93,7 @@
           </ol>
         </div>
 
-        <div class="exercise-card">
+        <div class="exercise-card" id="pull-ups">
           <h3>Pull-Ups</h3>
           <div class="video-container">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/eGo4IYlbE5g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -108,7 +108,7 @@
       </div>
 
       <!-- Leg Exercises -->
-      <div class="exercise-category">
+      <div class="exercise-category" id="squats">
         <h2>Leg Exercises</h2>
         <div class="exercise-card">
           <h3>Squats</h3>
@@ -123,7 +123,7 @@
           </ol>
         </div>
 
-        <div class="exercise-card">
+        <div class="exercise-card" id="leg-press">
           <h3>Leg Press</h3>
           <div class="video-container">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/IZxyjW7MPJQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -138,7 +138,7 @@
       </div>
 
       <!-- Arm Exercises -->
-      <div class="exercise-category">
+      <div class="exercise-category" id="bicep-curls">
         <h2>Arm Exercises</h2>
         <div class="exercise-card">
           <h3>Bicep Curls</h3>
@@ -153,7 +153,7 @@
           </ol>
         </div>
 
-        <div class="exercise-card">
+        <div class="exercise-card" id="tricep-dips">
           <h3>Tricep Dips</h3>
           <div class="video-container">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/6kALZikXxLc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -193,17 +193,44 @@
       const recommendedList = document.getElementById('recommendedList');
       let exercises = [];
       if (bmi < 18.5) {
-        exercises = ['Bench Press', 'Deadlifts', 'Squats'];
+        exercises = [
+          { name: 'Bench Press', id: 'bench-press' },
+          { name: 'Deadlifts', id: 'deadlift' },
+          { name: 'Squats', id: 'squats' }
+        ];
       } else if (bmi >= 18.5 && bmi <= 24.9) {
-        exercises = ['Pull-Ups', 'Incline Dumbbell Press', 'Leg Press'];
+        exercises = [
+          { name: 'Pull-Ups', id: 'pull-ups' },
+          { name: 'Incline Dumbbell Press', id: 'incline-dumbbell-press' },
+          { name: 'Leg Press', id: 'leg-press' }
+        ];
       } else if (bmi >= 25 && bmi <= 29.9) {
-        exercises = ['Running', 'Cycling', 'HIIT Workouts'];
+        exercises = [
+          { name: 'Running', id: 'running' },
+          { name: 'Cycling', id: 'cycling' },
+          { name: 'HIIT Workouts', id: 'hiit' }
+        ];
       } else {
-        exercises = ['Walking', 'Swimming', 'Yoga'];
+        exercises = [
+          { name: 'Walking', id: 'walking' },
+          { name: 'Swimming', id: 'swimming' },
+          { name: 'Yoga', id: 'yoga' }
+        ];
       }
 
       // Update the recommended exercises menu
-      recommendedList.innerHTML = exercises.map(exercise => `<li>${exercise}</li>`).join('');
+      recommendedList.innerHTML = exercises.map(exercise => `
+        <li><a href="#${exercise.id}" class="exercise-link">${exercise.name}</a></li>
+      `).join('');
+
+      // Add smooth scrolling for exercise links
+      document.querySelectorAll('.exercise-link').forEach(link => {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          target.scrollIntoView({ behavior: 'smooth' });
+        });
+      });
     });
   </script>
 </body>
