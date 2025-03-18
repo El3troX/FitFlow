@@ -41,7 +41,7 @@ body {
   }
   
   .cta-button {
-    background-color: green;
+    background-color: white;
     color: #ff6b6b;
     border: none;
     padding: 0.5rem 1.5rem;
@@ -477,4 +477,15 @@ body {
 .workout-schedule th {
   background-color: #f9f9f9;
   font-weight: 600;
+}
+
+.cta-button-schedule{
+  background-color: aqua;
+  color: #ff6b6b;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
