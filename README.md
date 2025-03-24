@@ -49,7 +49,7 @@ FitFlow is your **ultimate fitness and diet planning web application**, designed
 ### Steps to Run the Project
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/FitFlow.git
+   git clone https://github.com/El3TroX/FitFlow.git
    ```
 2. Navigate to the project directory:
    ```bash
