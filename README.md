@@ -69,7 +69,7 @@ FitFlow is a **fitness and diet planning web application** designed to help user
 5. Open the app in your browser:
    http://localhost:5500/index.html
    
-##File Structure
+## File Structure
 FitFlow/
 ├── index.html                # Home page
 ├── workouts.html             # Workouts page
