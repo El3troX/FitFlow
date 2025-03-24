@@ -62,14 +62,14 @@ FitFlow is a **fitness and diet planning web application** designed to help user
 2. Navigate to the project directory:
    ```bash
    cd FitFlow
-   Open the project in your code editor (e.g., VS Code).
+3. Open the project in your code editor (e.g., VS Code).
 
-3. Start a local server (e.g., using Live Server in VS Code).
+4. Start a local server (e.g., using Live Server in VS Code).
 
-4. Open the app in your browser:
+5. Open the app in your browser:
    http://localhost:5500/index.html
-   File Structure
-   Copy
+   
+##File Structure
 FitFlow/
 ├── index.html                # Home page
 ├── workouts.html             # Workouts page
