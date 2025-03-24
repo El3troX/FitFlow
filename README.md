@@ -59,21 +59,17 @@ FitFlow is a **fitness and diet planning web application** designed to help user
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/FitFlow.git
-Navigate to the project directory:
+2. Navigate to the project directory:
+   ```bash
+   cd FitFlow
+   Open the project in your code editor (e.g., VS Code).
 
-bash
-Copy
-cd FitFlow
-Open the project in your code editor (e.g., VS Code).
+3. Start a local server (e.g., using Live Server in VS Code).
 
-Start a local server (e.g., using Live Server in VS Code).
-
-Open the app in your browser:
-
-Copy
-http://localhost:5500/index.html
-File Structure
-Copy
+4. Open the app in your browser:
+   http://localhost:5500/index.html
+   File Structure
+   Copy
 FitFlow/
 ├── index.html                # Home page
 ├── workouts.html             # Workouts page
@@ -84,8 +80,8 @@ FitFlow/
 ├── styles.css                # Global styles
 ├── script.js                 # JavaScript for index.html
 ├── diet-planner.js           # JavaScript for diet planner
-├── food-data.csv             # CSV file containing food data
-├── images/                   # Folder for images
+├── food-data-group1.csv      # CSV file containing food data
+├── media/                    # Folder for images
 │   ├── gym.webp              # Gym workout image
 │   ├── yoga.webp             # Yoga workout image
 │   ├── dance.jpg             # Dance workout image
@@ -119,7 +115,7 @@ Get personalized workout and diet recommendations based on your BMI.
 4. Membership
 Visit the Membership page to join FitFlow and access premium features.
 
-Technologies Used
+### Technologies Used
 HTML: Structure of the web pages.
 
 CSS: Styling and layout.
@@ -129,26 +125,3 @@ JavaScript: Dynamic functionality and interactivity.
 CSV: Food data storage and parsing.
 
 LocalStorage: Persistent storage for diet plans.
-
-Contributing
-Contributions are welcome! If you'd like to contribute to FitFlow, follow these steps:
-
-Fork the repository.
-
-Create a new branch:
-
-bash
-Copy
-git checkout -b feature/your-feature-name
-Make your changes and commit them:
-
-bash
-Copy
-git commit -m "Add your feature"
-Push your changes to the branch:
-
-bash
-Copy
-git push origin feature/your-feature-name
-Open a pull request.
-
