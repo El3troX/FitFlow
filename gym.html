@@ -191,6 +191,15 @@
       // Display BMI result
       const bmiResult = document.getElementById('bmiResult');
       bmiResult.innerHTML = `<p>Your BMI is: <strong>${bmi}</strong></p>`;
+      if (bmi < 18.5) {
+        bmiResult.innerHTML += '<p>You are underweight. Consider increasing your calorie intake.</p>';
+      } else if (bmi >= 18.5 && bmi <= 24.9) {
+        bmiResult.innerHTML += '<p>You are within a healthy weight range. Keep up the good work!</p>';
+      } else if (bmi >= 25 && bmi <= 29.9) {
+        bmiResult.innerHTML += '<p>You are overweight. Consider reducing your calorie intake.</p>';
+      } else {
+        bmiResult.innerHTML += '<p>You are obese. Consider consulting a healthcare professional.</p>';
+      }
 
       // Recommend exercises based on BMI
       const recommendedList = document.getElementById('recommendedList');
