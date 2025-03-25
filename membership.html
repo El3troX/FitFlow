@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Membership Options - FitFlow</title>
+  <title>Membership - FitFlow</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -31,7 +31,7 @@
           <li>Basic workout plans</li>
           <li>Email support</li>
         </ul>
-        <a href="#" class="cta-button">Select Plan</a>
+        <button class="cta-button" onclick="thankYou()">Select Plan</button>
       </div>
       <div class="card">
         <h3>Pro Plan</h3>
@@ -41,7 +41,7 @@
           <li>Personalized workout plans</li>
           <li>Priority support</li>
         </ul>
-        <a href="#" class="cta-button">Select Plan</a>
+        <button class="cta-button" onclick="thankYou()">Select Plan</button>
       </div>
       <div class="card">
         <h3>Premium Plan</h3>
@@ -51,13 +51,20 @@
           <li>1-on-1 coaching sessions</li>
           <li>24/7 support</li>
         </ul>
-        <a href="#" class="cta-button">Select Plan</a>
+        <button class="cta-button" onclick="thankYou()">Select Plan</button>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 FitFlow Clone. All rights reserved.</p>
+    <p>&copy; 2025 FitFlow. All rights reserved.</p>
   </footer>
+
+  <script>
+    function thankYou() {
+      alert("Thank you for your support!");
+      // You could add redirection or form submission logic here
+    }
+  </script>
 </body>
 </html>

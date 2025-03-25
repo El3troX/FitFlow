@@ -19,12 +19,39 @@
     </nav>
   </header>
 
+
+  <style>
+    .typewriter{
+      display: inline-block;
+      overflow: hidden;
+      border-right: .15em solid orange;
+      white-space: nowrap;
+      margin: 0 auto;
+      letter-spacing: .15em;
+      animation: typing 3.5s steps(50, end), blink-caret .75s step-end infinite, hide-cursor 0.1s 3.5s forwards;
+      font-size: 2.5em;
+      color: white;
+      text-align: center;
+    }
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 70% }
+    }
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: lightgoldenrodyellow }
+    }
+    @keyframes hide-cursor {
+      to { border-color: transparent }
+    }
+  </style>
+
   <section id="home" class="hero">
     <div class="hero-content">
       <video autoplay muted loop src="media/hero.mp4" ></video>
-      <h1>Transform Your Life with FitFlow</h1>
+      <span class="typewriter"><h1>Transform Your Life with FitFlow</h1></span>
       <p>Join the best fitness community and achieve your goals.</p>
-      <a href="membership.html" class="cta-button">Get Started</a>
+      <a href="workouts.html" class="cta-button">Get Started</a>
     </div>
   </section>
 
