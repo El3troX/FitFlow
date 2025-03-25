@@ -73,6 +73,7 @@ FitFlow/
 ├── workouts.html             # Workouts page
 ├── gym.html                  # Gym workouts page
 ├── yoga.html                 # Yoga workouts page
+├── Dance.html                 # Dance workouts page
 ├── diet-planner.html         # Diet planner page
 ├── membership.html           # Membership page
 ├── styles.css                # Global styles
@@ -80,10 +81,15 @@ FitFlow/
 ├── diet-planner.js           # JavaScript for diet planner
 ├── food-data-group1.csv      # CSV file containing food data
 ├── media/                    # Folder for images
+|   ├── ballet.jpg
+|   ├── dancehero.jpg
+|   ├── workout-schedule.jpg
+|   ├── hiphop.jpg
+|   ├── zumba.jpg
 │   ├── gym.webp              # Gym workout image
 │   ├── yoga.webp             # Yoga workout image
 │   ├── dance.jpg             # Dance workout image
-│   ├── diet.jpg              # Diet planner image
+│   ├── food-plate.jpg       # Diet planner image
 │   └── hero.mp4              # Hero section video
 └── README.md                 # Project documentation
 ```
