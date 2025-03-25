@@ -190,7 +190,7 @@
 
       // Display BMI result
       const bmiResult = document.getElementById('bmiResult');
-      bmiResult.innerHTML = `<p>Your BMI is: <strong>${bmi}</strong></p>`;
+      bmiResult.innerHTML = `<p>Your BMI is: <strong>${bmi}</strong>(Healthy Range : 18.5 - 24.9)</p>`;
       if (bmi < 18.5) {
         bmiResult.innerHTML += '<p>You are underweight. Consider increasing your calorie intake.</p>';
       } else if (bmi >= 18.5 && bmi <= 24.9) {
