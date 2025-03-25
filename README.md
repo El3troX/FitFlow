@@ -4,6 +4,10 @@ FitFlow is your **ultimate fitness and diet planning web application**, designed
 
 ---
 
+## 👥 Team Members
+- **Divyam Pandey 23BDS0139**
+- **Srujan Rajput 23BCT0104**
+
 ## 🚀 Features
 
 ### 🏋️‍♂️ Workouts
